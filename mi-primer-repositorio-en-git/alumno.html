@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Alumno - Universidad Kennedy</title>
+    <style>
+        body {
+            background: linear-gradient(120deg, #e0f7fa 0%, #b2dfdb 100%);
+            font-family: 'Georgia', 'Times New Roman', serif;
+            min-height: 100vh;
+            margin: 0;
+            color: #004d40;
+        }
+        .form-container {
+            background: #fff;
+            max-width: 420px;
+            margin: 60px auto 0 auto;
+            padding: 38px 32px 32px 32px;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(0,77,64,0.13);
+            text-align: center;
+        }
+        .form-container h2 {
+            margin-bottom: 22px;
+            font-size: 2em;
+            color: #00695c;
+            letter-spacing: 1px;
+        }
+        .form-group {
+            margin-bottom: 18px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #004d40;
+            font-size: 1.08em;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #b2dfdb;
+            border-radius: 6px;
+            font-size: 1em;
+            background: #f8fafb;
+            color: #004d40;
+            transition: border 0.2s;
+        }
+        .form-group input:focus, .form-group select:focus {
+            border: 1.5px solid #26a69a;
+            outline: none;
+        }
+        .btn-enviar {
+            background: linear-gradient(90deg, #26a69a 0%, #004d40 100%);
+            color: #fff;
+            border: none;
+            padding: 12px 32px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+        .btn-enviar:hover {
+            background: linear-gradient(90deg, #004d40 0%, #26a69a 100%);
+        }
+        .volver {
+            display: inline-block;
+            margin-top: 28px;
+            color: #00695c;
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 1em;
+        }
+        @media (max-width: 600px) {
+            .form-container {
+                padding: 18px 6vw 22px 6vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Ingreso de Alumno</h2>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ej: Pérez" required>
+            </div>
+            <div class="form-group">
+                <label for="legajo">Legajo</label>
+                <input type="text" id="legajo" name="legajo" placeholder="Ej: 12345" required>
+            </div>
+            <div class="form-group">
+                <label for="carrera">Carrera</label>
+                <select id="carrera" name="carrera" required>
+                    <option value="" disabled selected>Selecciona tu carrera</option>
+                    <option>Abogacía</option>
+                    <option>Contador Público</option>
+                    <option>Psicología</option>
+                    <option>Licenciatura en Administración</option>
+                    <option>Licenciatura en Informática</option>
+                    <option>Otra</option>
+                </select>
+            </div>
+            <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+        <a href="index.html" class="volver">← Volver a la página principal</a>
+    </div>
+</body>
+</html>
