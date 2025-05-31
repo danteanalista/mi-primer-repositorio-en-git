@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modalidad de Estudio</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+    .modalidad-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        justify-content: center;
+        margin: 48px auto;
+        max-width: 1100px;
+    }
+    .modalidad-card {
+        background: #fff;
+        /* border-radius: 14px; */ /* Opcional: puedes dejar el redondeo si te gusta */
+        box-shadow: 0 4px 24px rgba(38,38,38,0.10);
+        padding: 36px 28px 28px 28px;
+        max-width: 450px;
+        min-width: 320px;
+        flex: 1 1 320px;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        /* border: none; */ /* Asegura que no haya borde */
+    }
+    .modalidad-card:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 8px 32px rgba(38,38,38,0.16);
+    }
+    .modalidad-card h2 {
+        color: #004d40;
+        margin-bottom: 18px;
+        font-size: 1.5em;
+    }
+    .modalidad-card p {
+        color: #333;
+        font-size: 1.08em;
+        text-align: justify;
+    }
+    @media (max-width: 900px) {
+        .modalidad-container {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .titulo-kennedy {
+        /* border: 8px solid rgb(198, 20, 44); */ /* Elimina el borde */
+        padding: 10px 30px;
+        display: inline-block;
+        box-shadow: 0 8px 50px rgba(82, 38, 38, 0.15);
+        background-color: #f0f8ff;
+        color: #222;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        font-size: 2.5rem;
+        text-align: center;
+        border-radius: 12px;
+        margin: 30px auto 40px auto;
+    }
+    body {
+        background: #f5f5f5;
+    }
+</style>
+</head>
+<body class="pagina-modalidad">
+    <div class="titulo-modalidad">
+    Modalidad de Estudio
+</div>
+    <main>
+        <div class="modalidad-container">
+            <div class="modalidad-card">
+                <h2>Modalidad Presencial</h2>
+                <p>
+                    La Universidad Kennedy ofrece carreras presenciales en sus sedes, brindando una experiencia educativa integral. Los estudiantes asisten a clases en aulas modernas, participan en actividades prácticas y cuentan con el acompañamiento directo de docentes y tutores. Esta modalidad fomenta la interacción, el trabajo en equipo y el desarrollo de habilidades sociales en un entorno universitario enriquecedor.
+                </p>
+                <ul>
+                    <li>Clases en aulas equipadas</li>
+                    <li>Acceso a laboratorios y bibliotecas</li>
+                    <li>Actividades extracurriculares</li>
+                    <li>Interacción directa con docentes</li>
+                    <li>Red de compañeros y vida universitaria</li>
+                </ul>
+            </div>
+            <div class="modalidad-card">
+                <h2>Modalidad Online</h2>
+                <p>
+                    La modalidad online permite cursar carreras de grado y posgrado a distancia, accediendo a clases virtuales, materiales interactivos y tutorías personalizadas desde cualquier lugar. Esta opción brinda flexibilidad horaria, acompañamiento docente permanente y acceso a una plataforma educativa moderna, facilitando la conciliación entre estudio, trabajo y vida personal.
+                </p>
+                <ol>
+                    <li>Asistencia a clases en campus universitario</li>
+                    <li>Acceso a laboratorios y bibliotecas</li>
+                    <li>Interacción directa con docentes y compañeros</li>
+                    <li>Actividades extracurriculares y talleres</li>
+                    <li>Acompañamiento académico personalizado</li>
+                </ol>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
