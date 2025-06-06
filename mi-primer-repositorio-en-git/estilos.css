@@ -15,7 +15,7 @@ body {
 
 /* Header y título */
 header {
-    background: #d21d62;
+    background: #3b7ae7;
     color: #ffffff;
     padding: 24px 0 10px 0;
     text-align: center;
@@ -49,15 +49,6 @@ header {
     vertical-align: middle;
 }
 
-.linea-titulo {
-    width: 100%;
-    max-width: 520px;
-    height: 4px;
-    background: linear-gradient(90deg, #060f0e 0%, #e3e7e7 100%);
-    margin: 12px auto 0 auto;
-    border-radius: 2px;
-}
-
 /* Navegación */
 nav ul {
     list-style: none;
@@ -69,36 +60,25 @@ nav ul {
 }
 nav ul li a {
     display: inline-block;
-    padding: 10px 24px;
+    padding: 10px 28px;
     margin: 6px 8px;
-    background: #c01515;
-    color: #090000;
+    background: linear-gradient(90deg, #29047a 0%, #0292af 100%);
+    color: #fff;
     border-radius: 8px;
-    border: 3px solid #000000;
+    border: none;
     font-size: 1.1em;
     font-weight: 600;
     text-decoration: none;
-    transition: background 0.3s, color 0.3s, border 0.3s;
     box-shadow: 0 2px 8px rgba(21,101,192,0.08);
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    letter-spacing: 1px;
+    text-transform: capitalize;
 }
 nav ul li a:hover {
-    background: #fff;
-    color: #000000;
-    border: 2px solid #1565c0;
-    text-decoration: none;
-}
-nav a {
-    color: #e0f2f1;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
-    padding: 8px 18px;
-    border-radius: 5px;
-    transition: background 0.3s, color 0.3s;
-}
-nav a:hover {
-    background: #00695c;
+    background: linear-gradient(90deg, #1976d2 0%, #d21d62 100%);
     color: #fff;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 4px 16px rgba(21,101,192,0.16);
 }
 
 /* Contenedor principal */
