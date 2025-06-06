@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         body {
-            background: linear-gradient(120deg, #ededed 0%, #fa7b7b 100%);
+            background: linear-gradient(120deg, #ededed 0%, #f5f5f5 100%);
             font-family: 'Segoe UI', Arial, sans-serif;
             min-height: 100vh;
             margin: 0;
@@ -76,21 +76,28 @@
         }
     </style>
 </head>
-<header>
-    <h1 class="titulo-kennedy">
-        <img src="img/logouk.jpg" alt="Logo Universidad Kennedy" class="logo-kennedy">
-        Universidad Kennedy
-    </h1>
-    <div class="linea-titulo"></div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="modalidad.html">Modalidad</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="alumno.html">Alumno</a></li>
-        </ul>
-    </nav>
-</header>
+ <header>
+        <form class="buscador-header">
+            <input type="text" placeholder="Buscar..." />
+            <button type="submit"><i class="fas fa-search"></i></button>
+            <a href="login.html" class="btn-login" title="Iniciar sesión">
+                <i class="fas fa-user"></i>
+            </a>
+        </form>
+        <h1 class="titulo-kennedy">
+            <img src="img/logouk.jpg" alt="Logo Universidad Kennedy" class="logo-kennedy">
+            Universidad Kennedy
+        </h1>
+        <div class="linea-titulo"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="modalidad.html">Modalidad</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="alumno.html">Alumno</a></li>
+            </ul>
+        </nav>
+    </header>
 <body>
     <div class="form-container">
         <h2>Ingreso de Alumno</h2>
