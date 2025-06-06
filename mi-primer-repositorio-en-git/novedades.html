@@ -4,19 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Novedades - Universidad Kennedy</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: #f4f4f4;
             color: #333;
             margin: 0;
-        }
-        header {
-            background: #004d40;
-            color: #fff;
-            padding: 24px 0 10px 0;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.12);
         }
         header h1 {
             font-size: 2.2em;
@@ -53,7 +48,7 @@
             margin-bottom: 18px;
         }
         .novedad-card h2 {
-            color: #004d40;
+            color: #000000;
             margin-bottom: 10px;
             font-size: 1.3em;
         }
@@ -63,7 +58,7 @@
         a.volver {
             display: inline-block;
             margin: 30px 0 0 0;
-            background: #00695c;
+            background: #000000;
             color: #fff;
             padding: 10px 24px;
             border-radius: 6px;
@@ -72,31 +67,70 @@
             transition: background 0.3s;
         }
         a.volver:hover {
-            background: #004d40;
+            background: #536f6a;
         }
         @media (max-width: 768px) {
             .novedad-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
+<header>
+    <h1 class="titulo-kennedy">
+        <img src="img/logouk.jpg" alt="Logo Universidad Kennedy" class="logo-kennedy">
+        Universidad Kennedy
+    </h1>
+    <div class="linea-titulo"></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="modalidad.html">Modalidad</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="alumno.html">Alumno</a></li>
+        </ul>
+    </nav>
+</header>
 <body>
-    <header>
-        <h1>Novedades Universidad Kennedy</h1>
-    </header>
     <main class="container">
         <div class="novedad-grid">
             <div class="novedad-card">
-                <img src="img/ganadores.jpg"Premio Investigación">
+                <img src="img/ganadores.jpg" alt="Premio Investigación">
                 <h2>Premio a la Investigación</h2>
                 <p>Estudiantes de Kennedy recibieron el primer premio en el concurso nacional de investigación científica, destacando por su creatividad y rigor académico.</p>
             </div>
             <div class="novedad-card">
-                <img src="img/deportes.jpg"Deportes Kennedy">
+                <img src="img/deportes.jpg" alt="Deportes Kennedy">
                 <h2>Jornada Deportiva</h2>
                 <p>Se llevó a cabo la jornada deportiva anual, fomentando la integración y el bienestar de toda la comunidad universitaria.</p>
             </div>
         </div>
         <a href="index.html" class="volver">Volver a la página principal</a>
     </main>
+    <footer>
+        <p style="margin:0; font-size:1.1em; color:#e0f2f1;">
+            <strong>© 2026 Dante Agustin Courvoisier</strong><br>
+            Todos los derechos reservados
+        </p>
+        <div style="margin: 18px 0;">
+            <a href="https://www.facebook.com/universidadkennedy" target="_blank" style="color:#fff; margin:0 10px; font-size:1.6em;">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/universidadkennedy/" target="_blank" style="color:#fff; margin:0 10px; font-size:1.6em;">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/school/universidad-kennedy/" target="_blank" style="color:#fff; margin:0 10px; font-size:1.6em;">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/UKennedyOK" target="_blank" style="color:#fff; margin:0 10px; font-size:1.6em;">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+        </div>
+        <p style="margin-top:10px; font-size:0.98em; color:#e0f2f1;">
+            <strong>ACLARACIÓN:</strong> Esta no es la página oficial de la Universidad Kennedy.<br>
+            Puedes visitar el sitio oficial aquí:<br>
+            <a href="https://www.kennedy.edu.ar/" target="_blank" rel="noopener" style="color:#80cbc4; text-decoration:underline; font-weight:bold;">
+                www.kennedy.edu.ar
+            </a>
+        </p>
+    </footer>
 </body>
 </html>

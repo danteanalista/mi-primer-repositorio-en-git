@@ -5,70 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modalidad de Estudio</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
-    .modalidad-container {
-        background-color: #000000;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 32px;
-        justify-content: center;
-        margin: 48px auto;
-        max-width: 1100px;
-    }
-    .modalidad-card {
-        background: #f1f1f1;
-        /* border-radius: 14px; */ /* Opcional: puedes dejar el redondeo si te gusta */
-        box-shadow: 0 4px 24px rgba(38,38,38,0.10);
-        padding: 36px 28px 28px 28px;
-        max-width: 450px;
-        min-width: 320px;
-        flex: 1 1 320px;
-        text-align: center;
-        transition: transform 0.3s, box-shadow 0.3s;
-        /* border: none; */ /* Asegura que no haya borde */
-    }
-    .modalidad-card:hover {
-        transform: translateY(-8px) scale(1.03);
-        box-shadow: 0 8px 32px rgba(38,38,38,0.16);
-    }
-    .modalidad-card h2 {
-        color: #004d40;
-        margin-bottom: 18px;
-        font-size: 1.5em;
-    }
-    .modalidad-card p {
-        color: #333;
-        font-size: 1.08em;
-        text-align: justify;
-    }
-    @media (max-width: 900px) {
         .modalidad-container {
-            flex-direction: column;
-            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            justify-content: center;
+            margin: 48px auto;
+            max-width: 1100px;
         }
-    }
-    .titulo-kennedy {
-        /* border: 8px solid rgb(198, 20, 44); */ /* Elimina el borde */
-        padding: 10px 30px;
-        display: inline-block;
-        box-shadow: 0 8px 50px rgba(82, 38, 38, 0.15);
-        background-color: #f0f8ff;
-        color: #222;
-        font-family: 'Segoe UI', Arial, sans-serif;
-        font-size: 2.5rem;
-        text-align: center;
-        border-radius: 12px;
-        margin: 30px auto 40px auto;
-    }
-    body {
-        background: #a90707;
-    }
-</style>
+        .modalidad-card {
+            background: #f1f1f1;
+            box-shadow: 0 4px 24px rgba(38,38,38,0.10);
+            padding: 36px 28px 28px 28px;
+            max-width: 450px;
+            min-width: 320px;
+            flex: 1 1 320px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .modalidad-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(38,38,38,0.16);
+        }
+        .modalidad-card h2 {
+            color: #8B0000;
+            margin-bottom: 18px;
+            font-size: 1.5em;
+        }
+        .modalidad-card p {
+            color: #333;
+            font-size: 1.08em;
+            text-align: justify;
+        }
+        @media (max-width: 900px) {
+            .modalidad-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        
+        
+    </style>
 </head>
-<body class="pagina-modalidad">
-    <div class="titulo-modalidad">
-    Modalidad de Estudio
-</div>
+<header>
+    <h1 class="titulo-kennedy">
+        <img src="img/logouk.jpg" alt="Logo Universidad Kennedy" class="logo-kennedy">
+        Universidad Kennedy
+    </h1>
+    <div class="linea-titulo"></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="modalidad.html">Modalidad</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="alumno.html">Alumno</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    </div>
     <main>
         <div class="modalidad-container">
             <div class="modalidad-card">
@@ -99,5 +96,32 @@
             </div>
         </div>
     </main>
+    <footer>
+        <p style="margin:0; font-size:1.1em; color:#e0f2f1;">
+            <strong>© 2026 Dante Agustin Courvoisier</strong><br>
+            Todos los derechos reservados
+        </p>
+        <div style="margin: 18px 0;">
+            <a href="https://www.facebook.com/universidadkennedy" target="_blank" style="color:#fff; margin:0 10px; font-size:1.6em;">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/universidadkennedy/" target="_blank" style="color:#fff; margin:0 10px; font-size:1.6em;">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/school/universidad-kennedy/" target="_blank" style="color:#fff; margin:0 10px; font-size:1.6em;">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/UKennedyOK" target="_blank" style="color:#fff; margin:0 10px; font-size:1.6em;">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+        </div>
+        <p style="margin-top:10px; font-size:0.98em; color:#e0f2f1;">
+            <strong>ACLARACIÓN:</strong> Esta no es la página oficial de la Universidad Kennedy.<br>
+            Puedes visitar el sitio oficial aquí:<br>
+            <a href="https://www.kennedy.edu.ar/" target="_blank" rel="noopener" style="color:#80cbc4; text-decoration:underline; font-weight:bold;">
+                www.kennedy.edu.ar
+            </a>
+        </p>
+    </footer>
 </body>
 </html>

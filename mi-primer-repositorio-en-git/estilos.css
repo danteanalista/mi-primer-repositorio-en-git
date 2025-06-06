@@ -1,219 +1,71 @@
+/* Reset y base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(120deg, #e0f7fa, #ffffff 80%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #3b2e2e;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header y título */
+header {
+    background: #d21d62;
+    color: #ffffff;
+    padding: 24px 0 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.12);
+}
+.titulo-kennedy {
+    border: 3px solid rgb(0, 0, 0);
+    padding: 24px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    box-shadow: 0 8px 50px rgba(0, 0, 0, 0.5);
+    background-color: #dfe4e8;
+    color: #000000;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+    border-radius: 12px;
+    margin: 30px auto 0 auto;
+    width: 80vw;
+    max-width: 900px;
+    min-width: 350px;
+}
+
+.logo-kennedy {
+    height: 2em;     /* Se adapta al tamaño del texto del título */
+    width: auto;        /* Mantiene la proporción original */
+    margin-right: 18px; /* Espacio entre logo y texto, si lo necesitas */
+    object-fit: contain;
+    vertical-align: middle;
+}
+
 .linea-titulo {
-    width: calc(100% - 36px); /* Ajusta el largo si quieres menos/más margen */
-    max-width: 520px; /* O el mismo ancho máximo que tu título */
+    width: 100%;
+    max-width: 520px;
     height: 4px;
     background: linear-gradient(90deg, #060f0e 0%, #e3e7e7 100%);
     margin: 12px auto 0 auto;
     border-radius: 2px;
 }
-.titulo-kennedy {
-    border: 8px solid rgb(85, 0, 0);
-    padding: 10px 18px; /* Aumenta el padding horizontal si quieres más ancho */
-    display: block;
-    box-shadow: 0 8px 50px rgba(0, 0, 0, 0.5);
-    background-color: #dfe4e8;
-    color: #000000;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    font-size: 2.5rem;
-    text-align: center;
-    border-radius: 12px;
-    margin: 20px auto 0 auto;
-}
-/* Estilo para los párrafos */
-p {
-    color: #000000;
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 16px;
-}
 
-/* Estilo para los enlaces */
-a {
-    color: #0099cc;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-a:hover {
-    color: #005577;
-    text-decoration: underline;
-}
-
-/* Estilo para el fondo de la página */
-body {
-    background: linear-gradient(120deg, #e0f7fa, #ffffff 80%);
+/* Navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
-}
-
-.volver {
-    display: inline-block;
-    margin-top: 10px;
-    color: #02025f;
-    font-weight: bold;
-    font-size: 20px;
-    text-decoration: none;
-    border: 2px solid #0f0f62;
-    border-radius: 8px;
-    padding: 8px 18px;
-    background: #fff;
-    transition: background 0.3s, color 0.3s;
-}
-.volver:hover {
-    background: #0f0f62;
-    color: #fff;
-}
-
-/* Estilo exclusivo para el enlace de volver en alumno.html */
-.volver-principal {
-    display: inline-block;
-    margin-top: 50px;
-    color: #000000;                /* Color del texto */
-    font-weight: 700;              /* Negrita */
-    font-size: 22px;               /* Tamaño de letra */
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* ← punto y coma agregado */
-    text-decoration: none;         /* Sin subrayado */
-    padding: 10px 28px;            /* Espaciado interno */
-    background: #e3f2fd;           /* Fondo azul claro */
-    transition: background 0.3s, color 0.3s, border 0.3s;
-    border: #333 solid 2.5px;
-}
-.volver-principal:hover {
-    background: #c01515;           /* Fondo azul al pasar el mouse */
-    color: #fff;                   /* Texto blanco al pasar el mouse */
-    border: 2.5px solid #0d47a1;   /* Borde sólido más oscuro */
-}
-.texto-novedades {
-    color: #1565c0;           /* Cambia el color del texto */
-    font-size: 1.15em;        /* Cambia el tamaño */
-    font-weight: 600;         /* Negrita */
-    font-family: 'Segoe UI', Arial, sans-serif;
-    letter-spacing: 1px;      /* Espaciado entre letras */
-    margin-right: 8px;        /* Espacio a la derecha */
-}
-
-/* Solo para la página de contacto */
-.pagina-contacto .contacto-profesional {
-    background: #fffcfc;
-    border-radius: 14px;
-    box-shadow: 0 4px 24px rgba(38,166,154,0.08);
-    padding: 36px 28px 28px 28px;
-    max-width: 600px;
-    margin: 40px auto 30px auto;
-}
-
-.pagina-contacto .info-contacto {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-    margin-bottom: 32px;
-    flex-wrap: wrap;
-}
-
-.pagina-contacto .contacto-item {
-    flex: 1 1 150px;
-    background: #e0f7fa;
-    border-radius: 8px;
-    padding: 18px 14px;
-    text-align: center;
-    margin-bottom: 12px;
-}
-
-.pagina-contacto .contacto-item h3 {
-    margin-top: 0;
-    color: #00796b;
-    font-size: 1.1em;
-    margin-bottom: 8px;
-}
-
-.pagina-contacto .contacto-item p,
-.pagina-contacto .contacto-item a {
-    color: #004d40;
-    font-size: 1em;
-    margin: 0;
-}
-
-.pagina-contacto .form-contacto {
-    margin-top: 18px;
-}
-
-.pagina-contacto .form-contacto h3 {
-    margin-bottom: 16px;
-    color: #1565c0;
-    font-size: 1.15em;
-}
-
-.pagina-contacto .form-group {
-    margin-bottom: 16px;
-}
-
-.pagina-contacto label {
-    display: block;
-    margin-bottom: 6px;
-    color: #222;
-    font-weight: 500;
-}
-
-.pagina-contacto input,
-.pagina-contacto textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1.5px solid #b2dfdb;
-    border-radius: 6px;
-    font-size: 1em;
-    background: #f9f9f9;
-    transition: border 0.2s;
-}
-
-.pagina-contacto input:focus,
-.pagina-contacto textarea:focus {
-    border-color: #26a69a;
-    outline: none;
-}
-
-.pagina-contacto .btn-enviar {
-    background: linear-gradient(90deg, #26a69a 0%, #004d40 100%);
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    padding: 10px 28px;
-    font-size: 1.1em;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-.pagina-contacto {
-    background: #c62828; /* Rojo fuerte */
-}
-
-.pagina-contacto .btn-enviar:hover {
-    background: linear-gradient(90deg, #004d40 0%, #26a69a 100%);
-}
-.pagina-modalidad header {
-    border-bottom: 6px solid #121515; /* Cambia el color y grosor a tu gusto */
-    border-radius: 0 0 18px 18px;     /* Opcional: bordes redondeados abajo */
-}
-.titulo-modalidad {
-    border: 4px solid #1976d2;
-    border-left: 12px solid #121111;
-    border-radius: 18px;
-    padding: 18px 40px;
-    display: block;
-    width: fit-content;
-    margin: 40px auto 32px auto;
-    background: #f0f8ff;
-    color: #222;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    font-size: 2.3rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    box-shadow: 0 4px 24px rgba(38,38,38,0.10);
-    text-align: center;
-}
-.logo-kennedy {
-     height: 60px;
-     width: 60px;
-     object-fit: contain;
 }
 nav ul li a {
     display: inline-block;
@@ -235,9 +87,265 @@ nav ul li a:hover {
     border: 2px solid #1565c0;
     text-decoration: none;
 }
-nav ul {
-    justify-content: center;
-    margin-left: 100px; /* Ajusta el valor según lo que necesites */
+nav a {
+    color: #e0f2f1;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 8px 18px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+nav a:hover {
+    background: #00695c;
+    color: #fff;
 }
 
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 20px 0 20px;
+    flex: 1;
+}
 
+/* Grilla de contenido (dos columnas centradas) */
+.content-grid {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.content-section,
+.content-section.centralizado {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.09);
+    padding: 32px 24px;
+    text-align: center;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 0;
+}
+.content-section:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 28px rgba(0,0,0,0.14);
+}
+.content-section h2 {
+    color: #004d40;
+    margin-bottom: 14px;
+    font-size: 1.6em;
+}
+.content-section p {
+    margin-bottom: 18px;
+    text-align: justify;
+}
+.content-section img {
+    max-width: 320px;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 18px;
+}
+
+/* Botón de novedades */
+.novedades-boton {
+    margin-top: 24px;
+    text-align: center;
+    width: 100%;
+}
+.texto-novedades {
+    font-size: 1.1em;
+    color: #1565c0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-right: 8px;
+}
+.volver {
+    display: inline-block;
+    margin-left: 8px;
+    background: #00695c;
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+.volver:hover {
+    background: #004d40;
+}
+
+/* Botón volver principal (alumno.html) */
+.volver-principal {
+    display: inline-block;
+    margin-top: 50px;
+    color: #000000;
+    font-weight: 700;
+    font-size: 22px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    padding: 10px 28px;
+    background: #e3f2fd;
+    transition: background 0.3s, color 0.3s, border 0.3s;
+    border: #333 solid 2.5px;
+}
+.volver-principal:hover {
+    background: #c01515;
+    color: #fff;
+    border: 2.5px solid #0d47a1;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 22px 0;
+    font-size: 1em;
+    margin-top: 50px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.08);
+}
+
+/* Párrafos y enlaces generales */
+p {
+    color: #000000;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+a {
+    color: #0099cc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+a:hover {
+    color: #005577;
+    text-decoration: underline;
+}
+
+/* Página de contacto */
+.pagina-contacto .contacto-profesional {
+    background: #fffcfc;
+    border-radius: 14px;
+    box-shadow: 0 4px 24px rgba(38,166,154,0.08);
+    padding: 36px 28px 28px 28px;
+    max-width: 600px;
+    margin: 40px auto 30px auto;
+}
+.pagina-contacto .info-contacto {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+.pagina-contacto .contacto-item {
+    flex: 1 1 150px;
+    background: #e0f7fa;
+    border-radius: 8px;
+    padding: 18px 14px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+.pagina-contacto .contacto-item h3 {
+    margin-top: 0;
+    color: #00796b;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+.pagina-contacto .contacto-item p,
+.pagina-contacto .contacto-item a {
+    color: #004d40;
+    font-size: 1em;
+    margin: 0;
+}
+.pagina-contacto .form-contacto {
+    margin-top: 18px;
+}
+.pagina-contacto .form-contacto h3 {
+    margin-bottom: 16px;
+    color: #1565c0;
+    font-size: 1.15em;
+}
+.pagina-contacto .form-group {
+    margin-bottom: 16px;
+}
+.pagina-contacto label {
+    display: block;
+    margin-bottom: 6px;
+    color: #222;
+    font-weight: 500;
+}
+.pagina-contacto input,
+.pagina-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1.5px solid #b2dfdb;
+    border-radius: 6px;
+    font-size: 1em;
+    background: #f9f9f9;
+    transition: border 0.2s;
+}
+.pagina-contacto input:focus,
+.pagina-contacto textarea:focus {
+    border-color: #26a69a;
+    outline: none;
+}
+.pagina-contacto .btn-enviar {
+    background: linear-gradient(90deg, #26a69a 0%, #004d40 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 28px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.pagina-contacto .btn-enviar:hover {
+    background: linear-gradient(90deg, #004d40 0%, #26a69a 100%);
+}
+
+/* Página modalidad */
+.pagina-modalidad header {
+    border-bottom: 6px solid #121515;
+    border-radius: 0 0 18px 18px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .content-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    .content-section,
+    .content-section.centralizado {
+        max-width: 95vw;
+        width: 95vw;
+    }
+}
+@media (max-width: 768px) {
+    .titulo-kennedy {
+        font-size: 1.3em;
+        flex-direction: column;
+        gap: 8px;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 0;
+    }
+    .logo-kennedy {
+        height: 40px;
+        width: 40px;
+    }
+}

@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingreso de Alumno - Universidad Kennedy</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         body {
             background: linear-gradient(120deg, #c10000 0%, #fa7b7b 100%);
-            font-family: cursive;
-            display: flex;      
+            font-family: 'Segoe UI', Arial, sans-serif;
             min-height: 100vh;
             margin: 0;
             color: #004d40;
@@ -26,7 +26,7 @@
         .form-container h2 {
             margin-bottom: 22px;
             font-size: 2em;
-            color: #00695c;
+            color: #c10000;
             letter-spacing: 1px;
         }
         .form-group {
@@ -51,11 +51,11 @@
             transition: border 0.2s;
         }
         .form-group input:focus, .form-group select:focus {
-            border: 1.5px solid #26a69a;
+            border: 1.5px solid #c10000;
             outline: none;
         }
         .btn-enviar {
-            background: linear-gradient(90deg, #26a69a 0%, #004d40 100%);
+            background: linear-gradient(90deg, #c10000 0%, #fa7b7b 100%);
             color: #fff;
             border: none;
             padding: 12px 32px;
@@ -67,7 +67,25 @@
             margin-top: 10px;
         }
         .btn-enviar:hover {
-            background: linear-gradient(90deg, #004d40 0%, #26a69a 100%);
+            background: linear-gradient(90deg, #fa7b7b 0%, #c10000 100%);
+        }
+        .volver-principal {
+            display: inline-block;
+            margin-top: 30px;
+            color: #fff;
+            background: #c10000;
+            font-weight: 700;
+            font-size: 1.1em;
+            text-decoration: none;
+            padding: 10px 28px;
+            border-radius: 8px;
+            border: 2px solid #a30000;
+            transition: background 0.3s, color 0.3s, border 0.3s;
+        }
+        .volver-principal:hover {
+            background: #fff;
+            color: #c10000;
+            border: 2px solid #c10000;
         }
         @media (max-width: 600px) {
             .form-container {
@@ -76,6 +94,21 @@
         }
     </style>
 </head>
+<header>
+    <h1 class="titulo-kennedy">
+        <img src="img/logouk.jpg" alt="Logo Universidad Kennedy" class="logo-kennedy">
+        Universidad Kennedy
+    </h1>
+    <div class="linea-titulo"></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="modalidad.html">Modalidad</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="alumno.html">Alumno</a></li>
+        </ul>
+    </nav>
+</header>
 <body>
     <div class="form-container">
         <h2>Ingreso de Alumno</h2>
@@ -109,5 +142,32 @@
         </form>
         <a href="index.html" class="volver-principal">← Volver a la página principal</a>
     </div>
+    <footer>
+        <p style="margin:0; font-size:1.1em; color:#e0f2f1;">
+            <strong>© 2026 Dante Agustin Courvoisier</strong><br>
+            Todos los derechos reservados
+        </p>
+        <div style="margin: 18px 0;">
+            <a href="https://www.facebook.com/universidadkennedy" target="_blank" style="color:#fff; margin:0 10px; font-size:1.6em;">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/universidadkennedy/" target="_blank" style="color:#fff; margin:0 10px; font-size:1.6em;">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/school/universidad-kennedy/" target="_blank" style="color:#fff; margin:0 10px; font-size:1.6em;">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/UKennedyOK" target="_blank" style="color:#fff; margin:0 10px; font-size:1.6em;">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+        </div>
+        <p style="margin-top:10px; font-size:0.98em; color:#e0f2f1;">
+            <strong>ACLARACIÓN:</strong> Esta no es la página oficial de la Universidad Kennedy.<br>
+            Puedes visitar el sitio oficial aquí:<br>
+            <a href="https://www.kennedy.edu.ar/" target="_blank" rel="noopener" style="color:#80cbc4; text-decoration:underline; font-weight:bold;">
+                www.kennedy.edu.ar
+            </a>
+        </p>
+    </footer>
 </body>
 </html>
