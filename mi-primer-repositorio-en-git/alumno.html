@@ -6,77 +6,9 @@
     <title>Ingreso de Alumno - Universidad Kennedy</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <style>
-        body {
-            background: linear-gradient(120deg, #ededed 0%, #f5f5f5 100%);
-            font-family: 'Segoe UI', Arial, sans-serif;
-            min-height: 100vh;
-            margin: 0;
-            color: #004d40;
-        }
-        .form-container {
-            background: #fff;
-            max-width: 420px;
-            margin: 60px auto 0 auto;
-            padding: 38px 32px 32px 32px;
-            border-radius: 18px;
-            box-shadow: 0 8px 32px rgba(0,77,64,0.13);
-            text-align: center;
-        }
-        .form-container h2 {
-            margin-bottom: 22px;
-            font-size: 2em;
-            color: #c10000;
-            letter-spacing: 1px;
-        }
-        .form-group {
-            margin-bottom: 18px;
-            text-align: left;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 6px;
-            font-weight: bold;
-            color: #004d40;
-            font-size: 1.08em;
-        }
-        .form-group input, .form-group select {
-            width: 100%;
-            padding: 10px 12px;
-            border: 1px solid #b2dfdb;
-            border-radius: 6px;
-            font-size: 1em;
-            background: #f8fafb;
-            color: #004d40;
-            transition: border 0.2s;
-        }
-        .form-group input:focus, .form-group select:focus {
-            border: 1.5px solid #c10000;
-            outline: none;
-        }
-        .btn-enviar {
-            background: linear-gradient(90deg, #c10000 0%, #fa7b7b 100%);
-            color: #fff;
-            border: none;
-            padding: 12px 32px;
-            border-radius: 8px;
-            font-size: 1.1em;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background 0.3s;
-            margin-top: 10px;
-        }
-        .btn-enviar:hover {
-            background: linear-gradient(90deg, #fa7b7b 0%, #c10000 100%);
-        }
-        @media (max-width: 600px) {
-            .form-container {
-                padding: 18px 6vw 22px 6vw;
-            }
-        }
-    </style>
 </head>
- <header>
+<body>
+    <header>
         <form class="buscador-header">
             <input type="text" placeholder="Buscar..." />
             <button type="submit"><i class="fas fa-search"></i></button>
@@ -98,7 +30,6 @@
             </ul>
         </nav>
     </header>
-<body>
     <div class="form-container">
         <h2>Ingreso de Alumno</h2>
         <form>
@@ -157,5 +88,6 @@
             </a>
         </p>
     </footer>
+    <script src="buscador.js"></script>
 </body>
 </html>
