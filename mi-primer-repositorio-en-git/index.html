@@ -33,28 +33,48 @@
     </header>
     <!-- Contenido principal -->
     <main class="container">
+    <section style="display: flex; gap: 40px; align-items: flex-start; flex-wrap: wrap;">
+        <!-- Tarjeta izquierda: Bienvenida -->
+        <div class="bienvenida content-section animar-scroll" style="flex:1; min-width:260px; display: flex; flex-direction: column; justify-content: center;">
+            <h2>Bienvenido a UK</h2>
+            <p>
+                Descubre una institución dedicada a la excelencia académica, la innovación y el desarrollo humano.<br>
+                Explora nuestras carreras, actividades y novedades. ¡Tu futuro comienza aquí!
+            </p>
+            <img src="img/vista.jpg" alt="Vista aérea del campus Kennedy" style="width:100%; max-width:340px; margin: 32px 0; display:block; border-radius: 12px;">
+        </div>
+        <!-- Tarjeta derecha: Información diferente -->
+        <div class="content-section centralizado animar-scroll" style="flex:1; min-width:260px; display: flex; flex-direction: column; justify-content: center;">
+            <h2>Valores Institucionales</h2>
+            <p>
+                En Kennedy promovemos la honestidad, el respeto, la responsabilidad y la solidaridad. Estos valores guían nuestro accionar y el de toda nuestra comunidad educativa.
+            </p>
+            <img src="img/valores.jpg" alt="Valores Kennedy">
+        </div>
+    </section>
+        <div style="height: 40px;"></div> <!-- Espacio extra para asegurar el scroll -->
         <section class="content-grid">
-            <!-- Misión y visión -->
-            <div class="content-section centralizado">
+        <!-- Misión y visión -->
+            <div class="content-section centralizado animar-scroll">
                 <img src="img/evento.jpg" alt="Campus de la Universidad Kennedy">
                 <h2>Misión y Visión</h2>
                 <p>
-                    Formamos profesionales íntegros, con excelencia académica y compromiso social. Nuestra visión es liderar la innovación educativa y el desarrollo humano en la región.
+                Formamos profesionales íntegros, con excelencia académica y compromiso social. Nuestra visión es liderar la innovación educativa y el desarrollo humano en la región.
                 </p>
-            </div>
-            <!-- Novedades -->
-            <div class="content-section centralizado">
+           </div>
+        <!-- Novedades -->
+            <div class="content-section centralizado animar-scroll">
                 <img src="img/conferencia.jpg" alt="Evento en la Universidad Kennedy">
                 <h2>Novedades y Actualidad</h2>
                 <p>
-                    Descubre los últimos eventos, conferencias y logros de nuestra comunidad universitaria. Kennedy impulsa la investigación y la participación estudiantil.
+                Descubre los últimos eventos, conferencias y logros de nuestra comunidad universitaria. Kennedy impulsa la investigación y la participación estudiantil.
                 </p>
-                <div class="novedades-boton">
-                    <span class="texto-novedades">Para más novedades pulse</span>
-                    <a href="novedades.html" class="volver">AQUÍ</a>
-                </div>
+            <div class="novedades-boton">
+                <span class="texto-novedades">Para más novedades pulse</span>
+                <a href="novedades.html" class="volver">AQUÍ</a>
             </div>
-        </section>
+        </div>
+    </section>
     </main>
     <!-- Footer -->
     <footer>
