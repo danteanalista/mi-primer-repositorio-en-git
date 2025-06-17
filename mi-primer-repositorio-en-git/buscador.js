@@ -39,6 +39,11 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', mostrarAnimados);
     mostrarAnimados();
 });
-window.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('header').classList.add('visible');
+window.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('popup').style.display = 'block';
+});
+
+// Cerrar el popup al hacer clic en "Cerrar"
+document.getElementById('cerrar-popup').addEventListener('click', function() {
+    document.getElementById('popup').style.display = 'none';
 });
