@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido al Portal Kennedy</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        body {
+            background: linear-gradient(120deg, #7a6f6f, #8a7171 80%);
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .panel-container {
+            max-width: 600px;
+            margin: 60px auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(44,62,80,0.13);
+            padding: 40px 32px 32px 32px;
+            text-align: center;
+        }
+        .panel-logo {
+            width: 80px;
+            margin-bottom: 18px;
+        }
+        .panel-title {
+            color: #000000;
+            font-size: 2em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .panel-user {
+            color: #0c0f0e;
+            font-size: 1.2em;
+            margin-bottom: 24px;
+        }
+        .panel-links {
+            margin-top: 32px;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+        }
+        .panel-link {
+            background: #26a69a;
+            color: #fff;
+            padding: 12px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        .panel-link:hover {
+            background: #1565c0;
+        }
+    </style>
+</head>
+<body>
+    <div class="panel-container">
+        <img src="img/logouk.jpg" alt="Logo Kennedy" class="panel-logo">
+        <div class="panel-title">¡Bienvenido, Estudiante!</div>
+        <div class="panel-user">Usuario: <strong>courvoisier</strong></div>
+        <p>
+            Has ingresado correctamente al portal de la Universidad Kennedy.<br>
+            Desde aquí puedes acceder a tus materias, consultar tus notas, descargar certificados y mucho más.
+        </p>
+        <div class="panel-links">
+            <a href="materias.html" class="panel-link">Mis Materias</a>
+            <a href="notas.html" class="panel-link">Mis Notas</a>
+            <a href="index.html" class="panel-link">Volver al Inicio</a>
+        </div>
+    </div>
+</body>
+</html>

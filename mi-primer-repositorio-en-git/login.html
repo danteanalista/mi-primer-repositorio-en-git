@@ -15,6 +15,7 @@
             <a href="login.html" class="btn-login" title="Iniciar sesión">
                 <i class="fas fa-user"></i>
             </a>
+            
         </form>
         <h1 class="titulo-kennedy">
             <img src="img/logouk.jpg" alt="Logo Universidad Kennedy" class="logo-kennedy">
@@ -30,36 +31,27 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="modalidad-container">
-            <div class="modalidad-card">
-                <h2>Modalidad Presencial</h2>
-                <p>
-                    La Universidad Kennedy ofrece carreras presenciales en sus sedes, brindando una experiencia educativa integral. Los estudiantes asisten a clases en aulas modernas, participan en actividades prácticas y cuentan con el acompañamiento directo de docentes y tutores. Esta modalidad fomenta la interacción, el trabajo en equipo y el desarrollo de habilidades sociales en un entorno universitario enriquecedor.
-                </p>
-                <ul>
-                    <li>Clases en aulas equipadas</li>
-                    <li>Acceso a laboratorios y bibliotecas</li>
-                    <li>Actividades extracurriculares</li>
-                    <li>Interacción directa con docentes</li>
-                    <li>Red de compañeros y vida universitaria</li>
-                </ul>
-            </div>
-            <div class="modalidad-card">
-                <h2>Modalidad Online</h2>
-                <p>
-                    La modalidad online permite cursar carreras de grado y posgrado a distancia, accediendo a clases virtuales, materiales interactivos y tutorías personalizadas desde cualquier lugar. Esta opción brinda flexibilidad horaria, acompañamiento docente permanente y acceso a una plataforma educativa moderna, facilitando la conciliación entre estudio, trabajo y vida personal.
-                </p>
-                <ol>
-                    <li>Asistencia a clases en campus universitario</li>
-                    <li>Acceso a laboratorios y bibliotecas</li>
-                    <li>Interacción directa con docentes y compañeros</li>
-                    <li>Actividades extracurriculares y talleres</li>
-                    <li>Acompañamiento académico personalizado</li>
-                </ol>
-            </div>
-        </div>
+
+    <!-- CONTENIDO PRINCIPAL igual al resto -->
+    <main class="container">
+        <section>
+            <div class="login-card">
+                <h2>Iniciar Sesión</h2>
+                <form id="login-form" class="form-login">
+                    <div class="form-group">
+                        <label for="usuario">Usuario</label>
+                        <input type="text" id="usuario" required>
+                    </div>
+                <div class="form-group">
+                    <label for="clave">Contraseña</label>
+                    <input type="password" id="clave" required>
+                </div>
+                <button type="submit">Ingresar</button>
+                <p id="mensaje-error" style="color: #c62828; display: none;">Usuario o contraseña incorrectos.</p>
+            </form>
+        </section>
     </main>
+
     <footer>
         <p style="margin:0; font-size:1.1em; color:#e0f2f1;">
             <strong>© 2026 Dante Agustin Courvoisier</strong><br>
@@ -88,5 +80,6 @@
         </p>
     </footer>
     <script src="buscador.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>
