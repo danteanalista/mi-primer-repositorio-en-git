@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universidad Kennedy - Excelencia Académica</title>
+    <title>Registro - Universidad Kennedy</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header y menú -->
+    <!-- HEADER igual al resto -->
     <header>
         <form class="buscador-header">
             <input type="text" placeholder="Buscar..." />
             <a href="login.html" class="btn-login" title="Iniciar sesión">
                 <i class="fas fa-user"></i>
             </a>
-            
         </form>
         <h1 class="titulo-kennedy">
             <img src="img/logouk.jpg" alt="Logo Universidad Kennedy" class="logo-kennedy">
@@ -32,31 +31,44 @@
         </nav>
     </header>
 
-    <!-- CONTENIDO PRINCIPAL igual al resto -->
     <main class="container">
         <section>
-            <div class="login-card">
-                <h2>Iniciar Sesión</h2>
-                <form id="login-form" class="form-login">
+            <div class="registro-card">
+                <h2>Crear Cuenta</h2>
+                <form id="registro-form" autocomplete="off">
+                    <div class="registro-exito" id="registro-exito">
+                        ¡Registro exitoso! Ahora puedes iniciar sesión.
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" required>
+                    </div>
                     <div class="form-group">
                         <label for="usuario">Usuario</label>
                         <input type="text" id="usuario" required>
                     </div>
-                <div class="form-group">
-                    <label for="clave">Contraseña</label>
-                    <input type="password" id="clave" required>
+                    <div class="form-group">
+                        <label for="clave">Contraseña</label>
+                        <input type="password" id="clave" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="clave2">Repetir contraseña</label>
+                        <input type="password" id="clave2" required>
+                    </div>
+                    <button type="submit" class="registro-btn">Registrarme</button>
+                </form>
+                <div class="registro-links">
+                    ¿Ya tienes cuenta? <a href="login.html">Iniciar sesión</a>
                 </div>
-                <button type="submit">Ingresar</button>
-                <p id="mensaje-error" style="color: #c62828; display: none;">Usuario o contraseña incorrectos.</p>
-                <p class="login-links">
-                    <a href="recuperar.html">¿Olvidaste tu contraseña?</a>
-                    <a href="registrarse.html">Registrarse</a>
-                </p>
-            </form>
-
+            </div>
         </section>
     </main>
 
+    <!-- FOOTER igual al resto -->
     <footer>
         <p style="margin:0; font-size:1.1em; color:#e0f2f1;">
             <strong>© 2026 Dante Agustin Courvoisier</strong><br>
@@ -84,7 +96,6 @@
             </a>
         </p>
     </footer>
-    <script src="buscador.js"></script>
-    <script src="login.js"></script>
+    <script src="registro.js"></script>
 </body>
 </html>

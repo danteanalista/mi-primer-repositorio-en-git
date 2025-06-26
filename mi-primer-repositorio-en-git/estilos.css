@@ -692,3 +692,108 @@ button[type="submit"]:hover {
 .login-links a:hover {
     text-decoration: underline;
 }
+/* --- REGISTRO --- */
+.registro-card {
+    max-width: 420px;
+    margin: 60px auto 32px auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(44,62,80,0.13);
+    padding: 40px 32px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.registro-card h2 {
+    color: #1565c0;
+    font-size: 2em;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+.registro-btn {
+    background: #26a69a;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    border-radius: 24px;
+    font-size: 1.1em;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+.registro-btn:hover {
+    background: #1565c0;
+}
+.registro-links {
+    margin-top: 18px;
+    text-align: center;
+}
+.registro-links a {
+    color: #1565c0;
+    text-decoration: none;
+    font-size: 0.98em;
+}
+.registro-links a:hover {
+    text-decoration: underline;
+}
+.registro-exito {
+    color: #388e3c;
+    background: #e8f5e9;
+    border-radius: 8px;
+    padding: 10px 0;
+    margin-bottom: 16px;
+    display: none;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .registro-card {
+        padding: 20px 8px;
+    }
+}
+/* --- PANEL CUENTA --- */
+
+.panel-container {
+    max-width: 600px;
+    margin: 1px auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(44,62,80,0.13);
+    padding: 40px 32px 32px 32px;
+    text-align: center;
+}
+.panel-logo {
+    width: 400px;
+    margin-bottom: 18px;
+}
+.panel-title {
+    color: #000000;
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.panel-user {
+    color: #000000;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+.panel-links {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.panel-link {
+    background: #26a69a;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+.panel-link:hover {
+    background: #c3c8ce;
+}
