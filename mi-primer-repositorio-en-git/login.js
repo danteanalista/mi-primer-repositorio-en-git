@@ -9,20 +9,35 @@ document.addEventListener('DOMContentLoaded', function() {
         const usuario = document.getElementById('usuario').value.trim();
         const clave = document.getElementById('clave').value.trim();
         const mensaje = document.getElementById('mensaje-error');
-        const toggleBtn = document.getElementById('toggleClave');
-        // Usuario y clave de ejemplo
-        if (usuario === "courvoisier" && clave === "1234") {
+
+        // Validación usuario: solo letras
+       if (!/^\d+$/.test(usuario)) {
+           mensaje.textContent = "El usuario solo debe contener números.";
+           mensaje.style.display = "block";
+           return;
+}
+
+        // Validación contraseña: mínimo 7 caracteres y al menos una mayúscula
+        if (clave.length < 7 || !/[A-Z]/.test(clave)) {
+            mensaje.textContent = "La contraseña debe tener al menos 7 caracteres y una mayúscula.";
+            mensaje.style.display = "block";
+            return;
+        }
+
+        // Validación contra usuarios registrados
+        const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+        const usuarioValido = usuarios.find(u => u.usuario === usuario && u.clave === clave);
+
+        if (usuarioValido) {
             mensaje.style.display = "none";
             window.location.href = "cuenta.html";
-            // window.location.href = "panel.html";
-            intentos = 0; // Reinicia los intentos si el login es correcto
+            intentos = 0;
         } else {
             intentos++;
+            mensaje.textContent = "Usuario o contraseña incorrectos.";
             mensaje.style.display = "block";
             if (intentos >= 3) {
                 alert("Demasiados intentos fallidos, por favor intente más tarde");
-                // Puedes deshabilitar el botón si quieres:
-                // form.querySelector('button[type=\"submit\"]').disabled = true;
             }
         }
     });
