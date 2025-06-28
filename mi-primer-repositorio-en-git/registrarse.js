@@ -17,10 +17,21 @@ document.addEventListener('DOMContentLoaded', function() {
             exito.textContent = "El usuario solo debe contener números.";
             if (intentosUsuario >= 3) {
                 alert("Has superado el número de intentos. El usuario solo puede contener números.");
-                intentosUsuario = 0; // Reinicia el contador si quieres permitir más intentos
+                intentosUsuario = 0;
             }
             return;
         }
+
+        // Validación contraseña: mínimo 7 caracteres y al menos una mayúscula
+        if (clave.length < 7 || !/[A-Z]/.test(clave)) {
+            exito.style.display = "block";
+            exito.style.background = "#ffebee";
+            exito.style.color = "#c62828";
+            exito.textContent = "La contraseña debe tener al menos 7 caracteres y una mayúscula.";
+            return;
+        }
+
+        // Validación de coincidencia de contraseñas
         if (clave !== clave2) {
             exito.style.display = "block";
             exito.style.background = "#ffebee";
